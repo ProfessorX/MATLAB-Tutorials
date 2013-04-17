@@ -8,7 +8,7 @@ A = AR - AI * 1i  % Now it's a complex array
 
 % Real and imaginary part of Array "A"
 A_real = real(A)
-A_image = image(A)
+A_image = imag(A)
 
 % Using LOOP to calculate norm and angle
 for m = 1: 2
