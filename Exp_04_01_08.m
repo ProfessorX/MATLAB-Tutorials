@@ -13,4 +13,6 @@ x0 = [-5, -2, 2, 5; -5, -2, 2, 5];  % Starting points
 % Verification
 disp([ff(sx(:,1)),ff(sx(:,2)), ff(sx(:,3)), ff(sx(:,4))])
 
-% Comment:
+% Comment: The independent variable is not represented as 
+% the tranditional x&y, but a [BINARY VECTOR]. This could be
+% treated as novel, well-worth reviewing.
