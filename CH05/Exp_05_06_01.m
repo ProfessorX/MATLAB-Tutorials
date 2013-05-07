@@ -17,13 +17,13 @@ for k = 1: L  % Loop L times
   zk = zeta(k);
   beta = sqrt(abs(1-zk^2));
   % Conditions
-  if (zk < 1)  % For zeta(k) < 1
+  if (k < 5)  % For zeta(k) < 1
     y = 1/beta * exp(-zk*t) .* sin(beta*t);
     plot(t, y, 'b')
     if (zk < 0.4)
       text(2.2, 0.63, '\zeta = 0.2')
     end
-  elseif zk == 1
+  elseif (abs(zk - 1) < 0.1)
   % To be more accurate, use "eps"
     y = t .* exp(-t);
     plot(t, y, 'k', 'LineWidth', 2)  % Shall verify this, line by line
